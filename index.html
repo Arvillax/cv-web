@@ -11,38 +11,50 @@
 </head>
 <body>
     <header class="header">
-        <div class="container">
-            <h1 class="name">Armando Jose Villamil Cruz</h1>
-            <p class="title">Desarrollador Jr</p>
-            <div class="contact">
-                <a href="www.linkedin.com/in/armando-josé-villamil-cruz" target="_blank"  aria-label="LinkedIn">
-                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" alt="LinkedIn" class="social-icon">
-                </a>
-                <a href="https://github.com/Arvillax" target="_blank" aria-label="GitHub">
-                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg" alt="GitHub" class="social-icon">
-                </a>
-                <a href="mailto:arvillax05@gmail.com" aria-label="Email">
-                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/gmail.svg" alt="Email" class="social-icon">
-                </a>
+        <div class="container header-inner">
+
+            <!-- FOTO DE PERFIL -->
+            <div class="avatar-wrapper" id="avatarWrapper">
+                <img src="guapoo.jpg" alt="Foto de perfil" class="avatar-img" id="avatarImg">
+            </div>
+
+            <!-- INFO PRINCIPAL -->
+            <div class="header-info">
+                <h1 class="name">Armando Jose Villamil Cruz</h1>
+                <p class="title">Desarrollador Jr</p>
+                <div class="contact">
+                    <a href="https://www.linkedin.com/in/armando-josé-villamil-cruz" target="_blank" aria-label="LinkedIn">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" alt="LinkedIn" class="social-icon">
+                    </a>
+                    <a href="https://github.com/Arvillax" target="_blank" aria-label="GitHub">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg" alt="GitHub" class="social-icon">
+                    </a>
+                    <a href="mailto:arvillax05@gmail.com" aria-label="Email">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/gmail.svg" alt="Email" class="social-icon">
+                    </a>
+                </div>
             </div>
         </div>
     </header>
 
     <main class="main">
+
+        <!-- Toast de notificación -->
+        <div class="toast" id="toast"></div>
+
         <section class="section" id="about">
             <h2 class="section-title">Sobre mí</h2>
             <p class="text">
                 Desarrollador móvil enfocado en React Native con formación en Ingeniería de Sistemas. 
                 Experiencia en creación de aplicaciones multiplataforma usando JS, navegación 
                 y consumo de APIs REST. Busco aplicar mis habilidades en entornos ágiles enfocados en 
-                experiencia de usuario limpia y funcional.
+                experiencia de usuario limpia y funcional; almenos ese es el objetivo.
             </p>
         </section>
 
         <section class="section" id="skills">
             <h2 class="section-title">Habilidades Técnicas</h2>
             <div class="skills-grid">
-                <!-- React Native/Expo  -->
                 <div class="skill-group">
                     <h3 class="group-title">Desarrollo Móvil</h3>
                     <div class="skill-tags">
@@ -52,8 +64,6 @@
                         <span class="skill-tag">HTML5 / CSS3</span>
                     </div>
                 </div>
-                
-                <!-- Grupos secundarios -->
                 <div class="skill-group">
                     <h3 class="group-title">Backend & Herramientas</h3>
                     <div class="skill-tags">
@@ -63,7 +73,6 @@
                         <span class="skill-tag">Firebase (Auth/Storage)</span>
                     </div>
                 </div>
-                
                 <div class="skill-group">
                     <h3 class="group-title">Fundamentos</h3>
                     <div class="skill-tags">
@@ -78,23 +87,20 @@
         <section class="section" id="projects">
             <h2 class="section-title">Proyectos Destacados</h2>
             <div class="projects-grid">
-                <!-- Proyecto 1 -->
                 <article class="project-card">
                     <h3 class="project-title">Proyecto-Asistencia-Docentes</h3>
                     <p class="project-text">
-                        Aplicacion de escritorio realizada para la recapitulacion de la asistencia en los 
-                        docentes en la Universida Catolica de honduras. Este progama utiliza .NET para auntentificacion
+                        Aplicación de escritorio realizada para la recapitulación de la asistencia de los 
+                        docentes en la Universidad Católica de Honduras. Este programa utiliza .NET para autenticación
                         de correo y base de datos en la nube.
                     </p>
                     <a href="https://github.com/Arvillax/Proyecto-Asistencia-Docentes.git" target="_blank" class="btn-link">Ver código</a>
                 </article>
-                
-                <!-- Proyecto 2 -->
                 <article class="project-card">
                     <h3 class="project-title">Noteget</h3>
                     <p class="project-text">
-                        Una app en desarrollo dedicada a la gestion de listas y deberes mobiles utilizando widgets de los telefonos
-                        como forma principal y gestiones de tiempo para los olvidadisos .
+                        Una app en desarrollo dedicada a la gestión de listas y deberes móviles utilizando widgets del teléfono
+                        como forma principal y gestión de tiempo para los olvidadizos.
                     </p>
                     <a href="#" class="btn-link">Ver código (próximamente)</a>
                 </article>
@@ -104,9 +110,9 @@
         <section class="section" id="education">
             <h2 class="section-title">Educación</h2>
             <div class="education-item">
-                <h3 class="edu-title">Ingeniería En Ciencias de la Computacion </h3>
+                <h3 class="edu-title">Ingeniería en Ciencias de la Computación</h3>
                 <p class="edu-detail">
-                    Universidad Catolica de Honduras (en curso) | 
+                    Universidad Católica de Honduras (en curso) | 
                     <span class="edu-year">2023 - Presente</span>
                 </p>
                 <p class="edu-text">
@@ -117,7 +123,7 @@
         </section>
 
         <footer class="footer">
-            <div class="container">
+            <div class="container footer-inner">
                 <p class="footer-text">
                     Intereses: Fotografía callejera · Edición de video DaVinci Resolve · 
                     Diseño de interfaces minimalistas
@@ -129,5 +135,7 @@
             </div>
         </footer>
     </main>
+
+    <script src="main.js"></script>
 </body>
 </html>
